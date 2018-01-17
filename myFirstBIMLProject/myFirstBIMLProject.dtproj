@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">VM-WIN-DEV-SQL1</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAANxviPKAmTEKsQNSd63W3AwAAAAACAAAAAAAQZgAAAAEAACAAAAAdqt9o/KM+nurSQkJKLDV/DyWeW7bn2qnApz9VFvLpkQAAAAAOgAAAAAIAACAAAAAn+qdTJscDxi3l+JqzpjUfiOb7poIrIVth9cNTSOQNYZAAAAASWrey4/1cvCSuGoHQNmIS7t62/eVCof9XbI/joALv08QcoUNs+cpbv3q/7HgojvtwIKt9gLO5jnGW5XCjKkIFNmIoFSC/KiiEqMCxijFuHROrcZdJigKVGChuq8pq8CqgcsA49EqCMiae4nRlz7XTfzYdN7trb6kZJfxHhALJAdMfLCPSzNP15nza4KwHMMpAAAAAS9XYreGHH6JnPSbHMNvKDCWrSr3EktoYrcXSYTkFf0tFLowORVpWSz75jMF+E4GYtIAk5AzaProhxFucaRzV3w==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAANxviPKAmTEKsQNSd63W3AwAAAAACAAAAAAAQZgAAAAEAACAAAACDn88kbNnhqujp642CTb3MFAb73SXYxR+fvcSFIkdmxwAAAAAOgAAAAAIAACAAAABBV3hE3qBCam+Ly8Pe80eIrvCJ+sqOPLUs4Ufbbfm1VJAAAADhZyNOhjbHCyHzCNne6YUI21rhGta6d9QGV9EKKn7hciTvN615zuo7GWJrSphiS4uw/qyy4y7lX6KS3wL9YGTy0VRtRmXHH/dIJ1tbLB/jzPMSvtlaV5oc3OLCDMCp1/OCmp8KCE+aoabYLl3ajCb3SvQVW8X9IbsBukYCXBcilqh8nWKW8l3JdNNt0cxMQ+5AAAAACH+km8zkhNhKBqRCQn9Zhwfk6DvAxo5gxPVn892jd2ZgAclGSN69JJe1Rg+PS0jEvEBBfr14+dxacCHAWH8GmQ==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -59,7 +59,12 @@
     </Manifest>
   </DeploymentModelSpecificContent>
   <ControlFlowParts />
-  <Miscellaneous />
+  <Miscellaneous>
+    <ProjectItem>
+      <Name>BimlScript.biml</Name>
+      <FullPath>BimlScript.biml</FullPath>
+    </ProjectItem>
+  </Miscellaneous>
   <Configurations>
     <Configuration>
       <Name>Development</Name>

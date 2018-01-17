@@ -5,13 +5,30 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "myFirstBIMLProject", "myFirstBIMLProject\myFirstBIMLProject.dtproj", "{231A9926-0D5D-4FAF-805D-B27BF73361CC}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "myFirstBIMLDB", "myFirstBIMLDB\myFirstBIMLDB.sqlproj", "{E149BF0A-D259-4EA2-A84B-83A3C562FB8D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Development|Default = Development|Default
+		Debug|Any CPU = Debug|Any CPU
+		Development|Any CPU = Development|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{231A9926-0D5D-4FAF-805D-B27BF73361CC}.Development|Default.ActiveCfg = Development
-		{231A9926-0D5D-4FAF-805D-B27BF73361CC}.Development|Default.Build.0 = Development
+		{231A9926-0D5D-4FAF-805D-B27BF73361CC}.Debug|Any CPU.ActiveCfg = Development
+		{231A9926-0D5D-4FAF-805D-B27BF73361CC}.Debug|Any CPU.Build.0 = Development
+		{231A9926-0D5D-4FAF-805D-B27BF73361CC}.Development|Any CPU.ActiveCfg = Development
+		{231A9926-0D5D-4FAF-805D-B27BF73361CC}.Development|Any CPU.Build.0 = Development
+		{231A9926-0D5D-4FAF-805D-B27BF73361CC}.Release|Any CPU.ActiveCfg = Development
+		{231A9926-0D5D-4FAF-805D-B27BF73361CC}.Release|Any CPU.Build.0 = Development
+		{E149BF0A-D259-4EA2-A84B-83A3C562FB8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E149BF0A-D259-4EA2-A84B-83A3C562FB8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E149BF0A-D259-4EA2-A84B-83A3C562FB8D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E149BF0A-D259-4EA2-A84B-83A3C562FB8D}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{E149BF0A-D259-4EA2-A84B-83A3C562FB8D}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{E149BF0A-D259-4EA2-A84B-83A3C562FB8D}.Development|Any CPU.Deploy.0 = Debug|Any CPU
+		{E149BF0A-D259-4EA2-A84B-83A3C562FB8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E149BF0A-D259-4EA2-A84B-83A3C562FB8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E149BF0A-D259-4EA2-A84B-83A3C562FB8D}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
