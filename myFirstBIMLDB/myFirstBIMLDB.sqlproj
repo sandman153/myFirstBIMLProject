@@ -137,4 +137,7 @@
   <ItemGroup>
     <PostDeploy Include="Scripts\Script.PostDeployment_MyFirstBIML.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\myFirstBIMLMetadata.sql" />
+  </ItemGroup>
 </Project>

@@ -26,34 +26,14 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">VM-WIN-DEV-SQL1</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAANxviPKAmTEKsQNSd63W3AwAAAAACAAAAAAAQZgAAAAEAACAAAACDn88kbNnhqujp642CTb3MFAb73SXYxR+fvcSFIkdmxwAAAAAOgAAAAAIAACAAAABBV3hE3qBCam+Ly8Pe80eIrvCJ+sqOPLUs4Ufbbfm1VJAAAADhZyNOhjbHCyHzCNne6YUI21rhGta6d9QGV9EKKn7hciTvN615zuo7GWJrSphiS4uw/qyy4y7lX6KS3wL9YGTy0VRtRmXHH/dIJ1tbLB/jzPMSvtlaV5oc3OLCDMCp1/OCmp8KCE+aoabYLl3ajCb3SvQVW8X9IbsBukYCXBcilqh8nWKW8l3JdNNt0cxMQ+5AAAAACH+km8zkhNhKBqRCQn9Zhwfk6DvAxo5gxPVn892jd2ZgAclGSN69JJe1Rg+PS0jEvEBBfr14+dxacCHAWH8GmQ==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAANxviPKAmTEKsQNSd63W3AwAAAAACAAAAAAAQZgAAAAEAACAAAADFsa398QuDIzZZ29ayF2Ir26YTEZTeYBF09BVvfiDA5gAAAAAOgAAAAAIAACAAAADzg3b29zcXp4jKNTmOh0PSS8JJPXSJSn3NLl0eFAlZnZAAAACkuD/yhh4jkEx/6U9OhhVYs4/oV+bmDdu4gBFkGjVnQ2Uq/QPVZs8ANIDsmysegwGz2C5V0wanAQ0M0cr7rdfw/vWRPmySjh3ULc9vIK4tZB4KE8lTdmtXsNdino8yMAhCMRz+Ve0YhQPgpdB8b2YjpuPGAwLcHhoAJ3hLvCipfWN4VNaUNkibtQ235l4RlTxAAAAAqT1uW/xx1AknDQFW8Sn+QfCvzklsl/lKBc4V08kG/Jk0Jkm3qspOmGvCKSchvB2QPlCF+t0g5npPrRJujaI5iw==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
-        <SSIS:Packages>
-          <SSIS:Package SSIS:Name="Package.dtsx" SSIS:EntryPoint="1" />
-        </SSIS:Packages>
+        <SSIS:Packages />
         <SSIS:ConnectionManagers />
         <SSIS:DeploymentInfo>
           <SSIS:ProjectConnectionParameters />
-          <SSIS:PackageInfo>
-            <SSIS:PackageMetaData SSIS:Name="Package.dtsx">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{F38D8F5A-E987-4010-B7B2-497CB0724F77}</SSIS:Property>
-                <SSIS:Property SSIS:Name="Name">Package</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionComments">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{F5309810-B46E-4262-8611-0BA6834BD86F}</SSIS:Property>
-                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
-              </SSIS:Properties>
-              <SSIS:Parameters />
-            </SSIS:PackageMetaData>
-          </SSIS:PackageInfo>
+          <SSIS:PackageInfo />
         </SSIS:DeploymentInfo>
       </SSIS:Project>
     </Manifest>
@@ -61,8 +41,20 @@
   <ControlFlowParts />
   <Miscellaneous>
     <ProjectItem>
-      <Name>BimlScript.biml</Name>
-      <FullPath>BimlScript.biml</FullPath>
+      <Name>01_Environment.biml</Name>
+      <FullPath>01_Environment.biml</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>02_BuildMetata.biml</Name>
+      <FullPath>02_BuildMetata.biml</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>03_Create_Staging.biml</Name>
+      <FullPath>03_Create_Staging.biml</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>04_Populate_Staging.biml</Name>
+      <FullPath>04_Populate_Staging.biml</FullPath>
     </ProjectItem>
   </Miscellaneous>
   <Configurations>
