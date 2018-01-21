@@ -9,3 +9,5 @@
                SELECT * FROM [$(TableName)]					
 --------------------------------------------------------------------------------------
 */
+:r ./TruncateMyFirstBIML_Metadata.sql
+

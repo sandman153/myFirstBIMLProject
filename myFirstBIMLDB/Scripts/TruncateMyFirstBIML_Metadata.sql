@@ -1,0 +1,1 @@
+﻿TRUNCATE TABLE myFirstBIML.config.MyBIMLMeta_Tables;

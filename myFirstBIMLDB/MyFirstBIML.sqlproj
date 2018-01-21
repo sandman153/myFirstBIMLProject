@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <Name>myFirstBIMLDB</Name>
+    <Name>MyFirstBIML</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{e149bf0a-d259-4ea2-a84b-83a3c562fb8d}</ProjectGuid>
@@ -84,6 +84,7 @@
     <Recovery>SIMPLE</Recovery>
     <EnableFullTextSearch>True</EnableFullTextSearch>
     <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+    <TargetDatabase>MyFirstBIML</TargetDatabase>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -139,5 +140,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\myFirstBIMLMetadata.sql" />
+    <None Include="myFirstBIMLDB.publish.xml" />
+    <None Include="Scripts\TruncateMyFirstBIML_Metadata.sql" />
   </ItemGroup>
 </Project>
