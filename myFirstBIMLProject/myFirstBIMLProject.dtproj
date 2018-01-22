@@ -26,14 +26,34 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">VM-WIN-DEV-SQL1</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAANxviPKAmTEKsQNSd63W3AwAAAAACAAAAAAAQZgAAAAEAACAAAADFsa398QuDIzZZ29ayF2Ir26YTEZTeYBF09BVvfiDA5gAAAAAOgAAAAAIAACAAAADzg3b29zcXp4jKNTmOh0PSS8JJPXSJSn3NLl0eFAlZnZAAAACkuD/yhh4jkEx/6U9OhhVYs4/oV+bmDdu4gBFkGjVnQ2Uq/QPVZs8ANIDsmysegwGz2C5V0wanAQ0M0cr7rdfw/vWRPmySjh3ULc9vIK4tZB4KE8lTdmtXsNdino8yMAhCMRz+Ve0YhQPgpdB8b2YjpuPGAwLcHhoAJ3hLvCipfWN4VNaUNkibtQ235l4RlTxAAAAAqT1uW/xx1AknDQFW8Sn+QfCvzklsl/lKBc4V08kG/Jk0Jkm3qspOmGvCKSchvB2QPlCF+t0g5npPrRJujaI5iw==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAANxviPKAmTEKsQNSd63W3AwAAAAACAAAAAAAQZgAAAAEAACAAAABfSwGkhd70TVSi5px82iK+EPjayHas6Zom+ywqtnKLQwAAAAAOgAAAAAIAACAAAACGyCetPT4VEEujl289FEcAChB8cXUPPnNK5l4y6AjLh5AAAADout36Xh1N03Y6AJuZ3UmDwM6Czl5lucVmz/oNaEXa0x1d9WuY5GN4peesKPm0TTThQJT3woqFKaiv4riErF3I6CcWxoknRtwKGw4K5fP6DP873O4SWH6/Tf6NVIcSmMA859fWiFAYB7mI544CyNxVZsTaBYMGvnYS8tt+jsuoubQDT0WQ04VS7rO5hKvVE1ZAAAAAlFGzoZCFL8AoKf1iEv3CbOrld1TE4dipyVRRtl5atK+DeRrAkSnRfWieD8YX1Z2rTzwDxsWKPG7YKER3PeLfQg==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
-        <SSIS:Packages />
+        <SSIS:Packages>
+          <SSIS:Package SSIS:Name="01_CreateStaging.dtsx" SSIS:EntryPoint="1" />
+        </SSIS:Packages>
         <SSIS:ConnectionManagers />
         <SSIS:DeploymentInfo>
           <SSIS:ProjectConnectionParameters />
-          <SSIS:PackageInfo />
+          <SSIS:PackageInfo>
+            <SSIS:PackageMetaData SSIS:Name="01_CreateStaging.dtsx">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">{3D6B0B8F-8159-4F42-B4A6-4A38EB9365E2}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">01_CreateStaging</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMajor">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionComments">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{E86D8412-A692-4E0B-A49F-A418BA7445B1}</SSIS:Property>
+                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
+              </SSIS:Properties>
+              <SSIS:Parameters />
+            </SSIS:PackageMetaData>
+          </SSIS:PackageInfo>
         </SSIS:DeploymentInfo>
       </SSIS:Project>
     </Manifest>
@@ -43,6 +63,10 @@
     <ProjectItem>
       <Name>01_Environment.biml</Name>
       <FullPath>01_Environment.biml</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>02_BuildMetata VB Old.biml</Name>
+      <FullPath>02_BuildMetata VB Old.biml</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>02_BuildMetata.biml</Name>
@@ -56,6 +80,10 @@
       <Name>04_Populate_Staging.biml</Name>
       <FullPath>04_Populate_Staging.biml</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>05_Populate_Table.biml</Name>
+      <FullPath>05_Populate_Table.biml</FullPath>
+    </ProjectItem>
   </Miscellaneous>
   <Configurations>
     <Configuration>
@@ -67,7 +95,13 @@
         <ConnectionSecurityMappings />
         <DatabaseStorageLocations />
         <TargetServerVersion>SQLServer2017</TargetServerVersion>
-        <ParameterConfigurationValues />
+        <ParameterConfigurationValues>
+          <ConfigurationSetting>
+            <Id>LastModifiedTime</Id>
+            <Name>LastModifiedTime</Name>
+            <Value xsi:type="xsd:dateTime">2018-01-22T12:37:14.9827908Z</Value>
+          </ConfigurationSetting>
+        </ParameterConfigurationValues>
       </Options>
     </Configuration>
   </Configurations>
